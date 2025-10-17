@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body class="bg-gray-50 min-h-screen flex flex-col items-center">
+    <!-- Header -->
+    <h1
+      class="text-center text-3xl sm:text-4xl my-8 font-semibold text-teal-700"
+    >
+      Temperature Converter
+    </h1>
+
+    <!-- Main Container -->
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] mx-auto border border-teal-600 rounded-2xl p-6 bg-white shadow-lg"
+    >
+      <!-- Input Section -->
+      <div class="w-full md:w-1/2 flex flex-col p-5">
+        <h2 class="text-xl text-teal-600 font-bold mb-4">Enter Temperature</h2>
+
+        <form class="space-y-6">
+          <!-- Degree Input -->
+          <div>
+            <label for="degree" class="text-lg text-teal-500 font-semibold"
+              >Degree</label
+            >
+            <div class="mt-2 flex">
+              <input
+                type="number"
+                id="temp"
+                name="degree"
+                placeholder="0"
+                class="pl-2 h-10 w-full max-w-[200px] border border-green-300 rounded-l-md focus:border-teal-400 focus:outline-none"
+              />
+              <select
+                id="select"
+                class="w-[60px] border border-green-300 rounded-r-md focus:border-teal-400 focus:outline-none"
+              >
+                <option value="°C">°C</option>
+                <option value="°F">°F</option>
+                <option value="K">K</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Convert Section -->
+          <div>
+            <label for="convert" class="text-lg text-teal-500 font-semibold"
+              >Convert To</label
+            ><br />
+            <select
+              id="convert"
+              class="w-full max-w-[270px] border border-green-300 rounded-md mt-2 h-10 focus:border-teal-400 focus:outline-none"
+            >
+              <option value="°F">Fahrenheit (°F)</option>
+              <option value="°C">Celsius (°C)</option>
+              <option value="K">Kelvin (K)</option>
+            </select>
+          </div>
+
+          <!-- Convert Button -->
+          <div class="text-center">
+            <button
+              id="btn"
+              type="button"
+              class="px-6 py-2 bg-teal-600 text-white rounded-lg font-semibold tracking-wide text-md hover:bg-teal-700 active:scale-95 transition"
+            >
+              Convert
+              <i class="fa-solid fa-arrow-right pl-2"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Output Section -->
+      <div
+        class="flex flex-col items-center justify-center w-full md:w-1/2 h-[250px] sm:h-[300px] bg-teal-700 rounded-xl shadow-md text-white"
+      >
+        <h1 id="output" class="text-5xl font-bold">--</h1>
+        <sup id="outputTemp" class="text-2xl font-semibold mt-1">°F</sup>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
