@@ -2,6 +2,9 @@
 
 A sleek and responsive web application for converting temperatures between Celsius, Fahrenheit, and Kelvin units. Built with modern web technologies and featuring real-time conversion capabilities.
 
+
+![Temperature_Converter](https://github.com/krishchouhan02/Temperature-Converter/blob/30d702c3891717c5d393280bd32a6ca9a1d02fdb/Temeprature_converter.png)
+
 ## ✨ Features
 
 - Multi-Unit Conversion : Convert between Celsius, Fahrenheit, and Kelvin
@@ -18,3 +21,7 @@ A sleek and responsive web application for converting temperatures between Celsi
 - DOM Manipulation: Dynamic content updates
 - Event Listeners : Real-time user interaction handling
 - If-Else Logic: Conditional conversion calculations
+
+
+
+made by Krish Kumar
